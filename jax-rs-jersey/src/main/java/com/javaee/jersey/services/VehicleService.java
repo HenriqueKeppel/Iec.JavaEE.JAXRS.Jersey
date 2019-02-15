@@ -1,8 +1,8 @@
-package com.javaee.keppel.jax_rs_jersey.services;
+package com.javaee.jersey.services;
 
 import java.util.List;
 
-import com.javaee.keppel.jax_rs_jersey.domain.Vehicle;
+import com.javaee.jersey.domain.Vehicle;
 
 public interface VehicleService {
 	

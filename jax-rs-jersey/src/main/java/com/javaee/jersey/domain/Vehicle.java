@@ -1,4 +1,4 @@
-package com.javaee.keppel.jax_rs_jersey.domain;
+package com.javaee.jersey.domain;
 
 public class Vehicle {
 

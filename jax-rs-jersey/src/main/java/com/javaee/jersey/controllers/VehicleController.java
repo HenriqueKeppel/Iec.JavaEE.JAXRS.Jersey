@@ -1,4 +1,4 @@
-package com.javaee.keppel.jax_rs_jersey.controllers;
+package com.javaee.jersey.controllers;
 
 import java.util.List;
 
@@ -20,11 +20,11 @@ import javax.ws.rs.core.UriInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.javaee.keppel.jax_rs_jersey.domain.Vehicle;
-import com.javaee.keppel.jax_rs_jersey.services.VehicleService;
-import com.javaee.keppel.jax_rs_jersey.services.VehicleServiceImpl;
+import com.javaee.jersey.domain.Vehicle;
+import com.javaee.jersey.services.VehicleService;
+import com.javaee.jersey.services.VehicleServiceImpl;
 
-@Path("/Vehicles")
+@Path("/vehicles")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class VehicleController {
@@ -49,7 +49,7 @@ public class VehicleController {
 	
 	// Cria a rota para o get by id
 	@GET
-	@Path("{id : \\d+")
+	@Path("{id : \\d+}")
 	public Response getById(@PathParam("id") Integer id)
 	{
 		logger.info("getById : {}", id);

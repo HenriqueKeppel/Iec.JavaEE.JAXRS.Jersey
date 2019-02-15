@@ -1,4 +1,4 @@
-package com.javaee.keppel.jax_rs_jersey;
+package com.javaee.jersey;
 
 /**
  * Hello world!
